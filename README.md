@@ -1,6 +1,6 @@
 ### Repository of publication: *Aberrant basal cell clonal expansions shape early lung carcinogenesis (Gomez-Lopez et al., 2023)*
 
-![GraphicalAbstract](https://github.com/cancersysbio/gastric_organoid_evolution/blob/main/GraphicalAbstract_040722_AK.png?raw=true)
+![GraphicalAbstract]()
 
 ## :file_folder: Repository content ###
 
