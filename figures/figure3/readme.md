@@ -1,4 +1,4 @@
-# FIGURE 3 -  Single cell profiling reveals cellular transition in trachea following NTCU treatment.
+# Figure 3 -  Single cell profiling reveals cellular transition in trachea following NTCU treatment.
 
 **scRNA_01_scanpy_NTCU_GEX_analysis.ipynb** - Script to perform standard analysis workflow of single-cell RNA-sequencing data from the trachea, including the sub-clustering of epithelial cells and scoring of publicly available gene signatures.
 
