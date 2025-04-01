@@ -1,0 +1,71 @@
+Gene.Symbol	Tier	Role.in.Cancer	Mutation.Types	Translocation.Partner	reference
+APC	1	TSG	D, Mis, N, F, S		Cancer Gene Census
+ARID1A	1	TSG, fusion	Mis, N, F, S, D, T	MAST2	Zhang et al, ARID1A is downregulated in non-small cell lung cancer and regulates cell proliferation and apoptosis, Tumor Biology 2014
+ATM	1	TSG	D, Mis, N, F, S		Campbell et al, Distinct patterns of somatic genome alterations in lung adenocarcinomas and squamous cell carcinomas, Nature Genetics, 2016
+B2M	1	TSG	Mis, N, F		Campbell et al, Distinct patterns of somatic genome alterations in lung adenocarcinomas and squamous cell carcinomas, Nature Genetics, 2016
+BAP1	1	TSG	N, Mis, F, S, O		Cancer Gene Census
+CDKN2A	1	TSG	D, Mis, N, F, S		Cancer Gene Census
+CREBBP	1	oncogene, TSG, fusion	T, N, F, Mis, O	KMT2A, MORF, KAT6A	TCGA, Comprehensive genomic characterization of squamous cell lung cancers, Nature, 2012
+CSMD3	2	TSG	Mis, N		Cancer Gene Census
+CUX1	1	oncogene, TSG	N,F,S,Mis,O,T	CLDN7	Cancer Gene Census
+DICER1	1	TSG	Mis, F, N		Cancer Gene Census
+DROSHA	1	TSG	A, Mis, N, F		Cancer Gene Census
+EP300	1	TSG, fusion	T,  N, F, Mis, O	KMT2A, KAT6A	Campbell et al, Distinct patterns of somatic genome alterations in lung adenocarcinomas and squamous cell carcinomas, Nature Genetics, 2016
+EPHA3	2		Mis		Cancer Gene Census
+ERBB4	1	oncogene, TSG	Mis, N		Cancer Gene Census
+FAT1	1	TSG	Mis, N, F, S		Morris et al, Recurrent somatic mutation of FAT1 in multiple human cancers leads to aberrant Wnt activation, Nature Genetics 2013
+FBXW7	1	TSG	Mis, N, D, F		TCGA, Comprehensive genomic characterization of squamous cell lung cancers, Nature, 2012
+GRIN2A	1	TSG	Mis, N, F, O		Cancer Gene Census
+KEAP1	1	TSG	Mis, N, F		Cancer Gene Census
+KMT2D	1	oncogene, TSG	N, F, Mis		TCGA, Comprehensive genomic characterization of squamous cell lung cancers, Nature, 2012
+MB21D2	2		Mis		Cancer Gene Census
+NF1	1	TSG, fusion	D, Mis, N, F, S, O		TCGA, Comprehensive genomic characterization of squamous cell lung cancers, Nature, 2012
+NFE2L2	1	oncogene, TSG	Mis		Cancer Gene Census
+NOTCH1	1	oncogene, TSG, fusion	T, Mis, O	TRB, SEC16A, GABBR2	Cancer Gene Census
+PTEN	1	TSG	D, Mis, N, F, S		TCGA, Comprehensive genomic characterization of squamous cell lung cancers, Nature, 2012
+PTK6	1	oncogene, TSG	Mis, N		Cancer Gene Census
+PTPN13	1	TSG	Mis, N		Cancer Gene Census
+PTPRB	1	TSG	N, Mis, S, F		Qi et al, Protein tyrosine phosphatase PTPRB regulates Src phosphorylation and tumour progression in NSCLC, Clinical and Experimental Pharmacology and Physiology 2016
+PTPRD	2	TSG	D, N, Mis		Cancer Gene Census
+PTPRT	1	TSG	Mis, N		Cancer Gene Census
+RAD21	1	oncogene, TSG	Mis, N, F		Cancer Gene Census
+RB1	1	TSG	D, Mis, N, F, S		Cancer Gene Census
+RBM10	1	TSG	Mis, F, N		Cancer Gene Census
+SETD2	1	TSG	N, F, S, Mis		Campbell et al, Distinct patterns of somatic genome alterations in lung adenocarcinomas and squamous cell carcinomas, Nature Genetics, 2016
+SMAD4	1	TSG	D, Mis, N, F		TCGA, Comprehensive genomic characterization of squamous cell lung cancers, Nature, 2012
+SMARCA4	1	TSG	F, N, Mis, S		Cancer Gene Census
+STK11	1	TSG	D, Mis, N, F, S		Cancer Gene Census
+TERT	1	oncogene, TSG	Promoter Mis		Cancer Gene Census
+TP53	1	oncogene, TSG, fusion	Mis, N, F, T	NTRK1	Cancer Gene Census
+TSC1	1	TSG	D, Mis, N, F, S		TCGA, Comprehensive genomic characterization of squamous cell lung cancers, Nature, 2012
+ZNF479	2		Mis		Cancer Gene Census
+BCLAF1					LUSC - The evolution of lung cancer and impact of subclonal selection in TRACERx, Nature, Alexander et atl2023
+B2M					LUSC - The evolution of lung cancer and impact of subclonal selection in TRACERx, Nature, Alexander et atl2023
+ATM					LUSC - The evolution of lung cancer and impact of subclonal selection in TRACERx, Nature, Alexander et atl2023
+SETD2					LUSC - The evolution of lung cancer and impact of subclonal selection in TRACERx, Nature, Alexander et atl2023
+NF1					LUSC - The evolution of lung cancer and impact of subclonal selection in TRACERx, Nature, Alexander et atl2023
+ARIDIA					LUSC - The evolution of lung cancer and impact of subclonal selection in TRACERx, Nature, Alexander et atl2023
+ARHGAP35					LUSC - The evolution of lung cancer and impact of subclonal selection in TRACERx, Nature, Alexander et atl2023
+FAM78B					LUSC - The evolution of lung cancer and impact of subclonal selection in TRACERx, Nature, Alexander et atl2023
+FBXW7					LUSC - The evolution of lung cancer and impact of subclonal selection in TRACERx, Nature, Alexander et atl2023
+KRAS					LUSC - The evolution of lung cancer and impact of subclonal selection in TRACERx, Nature, Alexander et atl2023
+CNTNAP2					LUSC - The evolution of lung cancer and impact of subclonal selection in TRACERx, Nature, Alexander et atl2023
+MGA					LUSC - The evolution of lung cancer and impact of subclonal selection in TRACERx, Nature, Alexander et atl2023
+NOTCH1					LUSC - The evolution of lung cancer and impact of subclonal selection in TRACERx, Nature, Alexander et atl2023
+FATT					LUSC - The evolution of lung cancer and impact of subclonal selection in TRACERx, Nature, Alexander et atl2023
+SMARCA4					LUSC - The evolution of lung cancer and impact of subclonal selection in TRACERx, Nature, Alexander et atl2023
+CTNND2					LUSC - The evolution of lung cancer and impact of subclonal selection in TRACERx, Nature, Alexander et atl2023
+HGF					LUSC - The evolution of lung cancer and impact of subclonal selection in TRACERx, Nature, Alexander et atl2023
+CMTR2					LUSC - The evolution of lung cancer and impact of subclonal selection in TRACERx, Nature, Alexander et atl2023
+STK11					LUSC - The evolution of lung cancer and impact of subclonal selection in TRACERx, Nature, Alexander et atl2023
+KMT2D					LUSC - The evolution of lung cancer and impact of subclonal selection in TRACERx, Nature, Alexander et atl2023
+RASA1					LUSC - The evolution of lung cancer and impact of subclonal selection in TRACERx, Nature, Alexander et atl2023
+RB1					LUSC - The evolution of lung cancer and impact of subclonal selection in TRACERx, Nature, Alexander et atl2023
+RBM5.					LUSC - The evolution of lung cancer and impact of subclonal selection in TRACERx, Nature, Alexander et atl2023
+SMAD4					LUSC - The evolution of lung cancer and impact of subclonal selection in TRACERx, Nature, Alexander et atl2023
+РІКЗСА					LUSC - The evolution of lung cancer and impact of subclonal selection in TRACERx, Nature, Alexander et atl2023
+KEAP1					LUSC - The evolution of lung cancer and impact of subclonal selection in TRACERx, Nature, Alexander et atl2023
+PTEN					LUSC - The evolution of lung cancer and impact of subclonal selection in TRACERx, Nature, Alexander et atl2023
+NFE2L2					LUSC - The evolution of lung cancer and impact of subclonal selection in TRACERx, Nature, Alexander et atl2023
+TP53					LUSC - The evolution of lung cancer and impact of subclonal selection in TRACERx, Nature, Alexander et atl2023
+CDKN2A					
