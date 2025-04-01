@@ -3,7 +3,6 @@ library(dplyr)
 library(harmony)
 library(data.table)
 library(ggplot2)
-library(gridExtra)
 
 # Function to load and label datasets
 load_and_label_seurat <- function(file_path, dataset_name) {
