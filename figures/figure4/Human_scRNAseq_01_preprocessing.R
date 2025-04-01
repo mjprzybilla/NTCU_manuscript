@@ -75,7 +75,7 @@ markers_filtered <- markers %>%
 # Save markers
 fwrite(markers, "Human.finder.markers.by.clusterid.tsv", sep="\t")
 
-# annotate clusters based on markers identified in each cluster
+# Annotate clusters based on identified markers
 cluster_annotations <- c("0" = "Basal 1",
                          "1" = "Suprabasal 2",
                          "2" = "Basal 3",
