@@ -497,6 +497,63 @@ plottingCloneMaps <- function(fullTreeOutput, cloneColorDF, outDir = "") {
 }
 
 
+# Run dn/ds on annovar somatic variants of WES
+run_dndscv_analysis <- function(df, driver.genes, clonality) {
+  
+  # Hard-code WES target genes
+  WES_targetGenes <- fread("WES_targeted_genes.twist_core_exome.txt", header=F)
+
+  # Filter out sample with no clonality info
+   No.truncal.samples <- c("P153_TRA", "P153_LMB")
+   df <- df %>% filter(!Tumor_Sample_Barcode %in% No.truncal.samples)
+  
+  # Prepare dndscv input
+  dndscv.input <- df %>% filter(Clonality == clonality) %>% 
+    filter(Hugo_Symbol %in% driver.genes$Gene.Symbol) %>%
+    dplyr::select(Tumor_Sample_Barcode, Otherinfo4, Otherinfo5, Otherinfo7, Otherinfo8)
+  
+  colnames(dndscv.input) <- c("sampleID", "chr", "pos", "ref", "mut")
+  
+  # Remove mutations duplicated in samples from the same patient
+  dndscv.input$uuid <- paste(dndscv.input$sampleID, dndscv.input$chr, dndscv.input$pos, 
+                             dndscv.input$ref, dndscv.input$mut, sep="-")
+  
+  dndscv.input <- dndscv.input[!duplicated(dndscv.input$uuid),]
+  
+  # Remove cluster mutations
+  mutations <- dndscv.input[order(dndscv.input$sampleID, dndscv.input$chr, dndscv.input$pos),]
+  ind <- which(diff(mutations$pos) == 1)
+  clust.mutations <- mutations[unique(sort(c(ind, ind + 1))),]
+  
+  dndscv.input <- dndscv.input[!dndscv.input$uuid %in% clust.mutations$uuid]
+  dndscv.input$uuid <- NULL
+  
+  # Run dndscv analysis
+  dndsout <- dndscv(dndscv.input, gene_list=WES_targetGenes$V1, max_muts_per_gene_per_sample = Inf,
+                    max_coding_muts_per_sample = Inf)
+  
+  # Extract the result
+  sel_cv <- dndsout$sel_cv
+  
+  # Find significant genes
+  signif_genes <- sel_cv[sel_cv$qallsubs_cv < 0.1, c("gene_name", "qallsubs_cv")]
+  rownames(signif_genes) <- NULL
+  
+  # Calculate wall_cv and standard deviation
+  sel_cv <- sel_cv %>%
+    mutate(wall_cv = rowMeans(.[, c('wmis_cv', 'wnon_cv')]) / 100) %>%
+    mutate(sd = rowSds(as.matrix(.[, c('wmis_cv', 'wnon_cv')])) / 100)
+  
+  # Order by qallsubs_cv
+  sel_cv <- sel_cv[order(sel_cv$qallsubs_cv), ]
+  
+  # Filter for driver genes
+  sel_cv <- sel_cv %>% filter(gene_name %in% driver.genes$Gene.Symbol)
+  
+  # Return the result
+  return(sel_cv)
+}
+
 # Plotting dn_ds
 plot_dn_ds <- function(df.sel_cv, colors) {
   dn.ds.plot <- ggplot(df.sel_cv, aes(x = Truncal, y = Subclonal, fill = Selection)) +
