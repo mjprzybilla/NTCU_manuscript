@@ -1,4 +1,4 @@
-%% Plot Figure 2 E,F,G (experimental data only)
+%% Plot Figure 2 E,F,G
 % directory with void data
 
 root_path = 'data';
