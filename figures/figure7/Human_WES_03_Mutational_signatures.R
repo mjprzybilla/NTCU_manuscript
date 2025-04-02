@@ -10,6 +10,7 @@
 ##                                                                                                                      
 ################################################################################################################################################
 
+# Load custom plotting functions
 source("scripts/WES_functions.R")
 
 # List of required packages
