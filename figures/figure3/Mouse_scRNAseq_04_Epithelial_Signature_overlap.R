@@ -88,7 +88,7 @@ fwrite(fisher_data, "Mouse.fisher.exact.test.results.tsv", sep="\t")
 
 
 # Order factors
-cells.type.order <- c('Basal proliferative','Basal','Basal Tgm2+','Basal Mecom+','Basal regenerative','Krt4/13+ cells','Secretory',
+cells.type.order <- c('Basal proliferative','Basal','Basal Tgm2+','Basal Mecom+','Basal Krt14+','Krt4/13+','Secretory',
                    'Secretory Mecom+', 'Deuterosomal cells', 'Ciliated Cells', 'Neuroendocrine', 'lonocytes', 'Tuft')
 
 
