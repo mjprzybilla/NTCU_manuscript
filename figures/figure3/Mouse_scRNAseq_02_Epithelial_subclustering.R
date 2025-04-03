@@ -65,7 +65,7 @@ fwrite(markers, "NTCU-treated.finder.markers.by.clusteris.tsv", sep="\t")
 # Annotate clusters based on identified markers
 cluster_annotations <- c("0" = "Basal Krt14+",
                          "1" = "Basal proliferative",
-                         "2" = "Krt4/13+ cells",
+                         "2" = "Krt4/13+",
                          "3" = "Secretory",
                          "4" = "Secretory Mecom+",
                          "5" = "Basal Tgm2+",
