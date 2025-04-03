@@ -111,7 +111,7 @@ seurat_integrated <- readRDS("data/scRNAseq/NTCU_Trachea_Epithelial_integrated_s
 
 # Define cluster numbers and corresponding labels
 clusters <- c(0:12)
-labels <- c("Basal regenerative", "Basal proliferative", "Krt4/13+ cells", "Secretory", "Secretory Mecom+",
+labels <- c("Basal Krt14+", "Basal proliferative", "Krt4/13+ cells", "Secretory", "Secretory Mecom+",
             "Basal Tgm2+", "Basal", "Basal Mecom+", "Deuterosomal cells", "Ciliated Cells",
             "lonocytes", "Tuft", "Neuroendocrine")
 
@@ -119,7 +119,7 @@ labels <- c("Basal regenerative", "Basal proliferative", "Krt4/13+ cells", "Secr
 df_clusters <- data.frame(clusters = clusters, labels = labels)
 
 # Define cell type order for visualization
-cells.type.order <- c('Basal proliferative', 'Basal', 'Basal Tgm2+', 'Basal Mecom+', 'Basal regenerative',
+cells.type.order <- c('Basal proliferative', 'Basal', 'Basal Tgm2+', 'Basal Mecom+', 'Basal Krt14+',
                       'Krt4/13+ cells', 'Secretory', 'Secretory Mecom+', 'Deuterosomal cells', 
                       'Ciliated Cells', 'Neuroendocrine', 'lonocytes', 'Tuft')
 
