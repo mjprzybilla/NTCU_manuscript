@@ -16,8 +16,8 @@ This GitHub repository contains the following folders:
 |   └─ imaging/: directory containing data from imaging analysis
 |   └─ scRNAseq/: directory containing data from scRNAseq profiling
 |   └─ WGS/: directory containing variant calls from WGS
-└─ models/: directory containing code to run numerical simulations of the neutral and non neutral models
-
+└─ scripts/: directory containing scripts for analysis and numerical simulations
+|   └─ models/: directory containing code to run numerical simulations of the neutral and non neutral models
 ```
 
 ## :unlock: Processed data
