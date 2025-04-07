@@ -6,19 +6,18 @@
 
 This GitHub repository contains the following folders:
 ```
-└─ figures/: directory containing R and other code to reproduce figures (Fig.2-5)
+└─ figures/: directory containing R and other code to reproduce figures (Fig.2-7)
 |   └─ figure2/: directory containing code to reproduce Figure 2
 |   └─ figure3/: directory containing code to reproduce Figure 3
 |   └─ figure4/: directory containing code to reproduce Figure 4
 |   └─ figure5/: directory containing code to reproduce Figure 5
 |   └─ figure6/: directory containing code to reproduce Figure 6
 |   └─ figure6/: directory containing code to reproduce Figure 7
-|   └─ Supplementary_figures/: directory containing code to reproduce Supplementary figures.
 └─ data/: directory containing code used for data analysis
 |   └─ imaging/: directory containing data from imaging analysis
 |   └─ scRNAseq/: directory containing data from scRNAseq profiling
 |   └─ WGS/: directory containing variant calls from WGS
-└─ scripts/: directory containing scripts for analysis and numerical simulations
+└─ scripts/: directory containing scripts for several analyses and numerical simulations
 |   └─ models/: directory containing code to run numerical simulations of the neutral and non neutral models
 ```
 
