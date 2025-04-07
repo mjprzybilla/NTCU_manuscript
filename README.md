@@ -1,4 +1,4 @@
-### Repository of publication: *Aberrant basal cell clonal expansions shape early lung carcinogenesis (Gomez-Lopez et al., 2023)*
+### Repository of publication: *Aberrant basal cell clonal dynamics shape early lung carcinogenesis (Gómez-López et al., 2024)*
 
 ![GraphicalAbstract]()
 
@@ -27,6 +27,7 @@ Metadata and counts, as well as processed scanpy objects available on Zenodo
 WGS and scRNA-seq data will be available via EGA.
 
 ## :white_check_mark: Citation
+Sandra Gómez-López, Ahmed S. N. Alhendi, Moritz J. Przybilla, Ignacio Bordeu, Zoe E. Whiteman, Timothy Butler, Maral J. Rouhani, Lukas Kalinke, Imran Uddin, Kate E. J. Otter, Deepak P. Chandrasekharan, Marta Lebrusant-Fernandez, Abigail Y. L. Shurr, Pascal F. Durrenberger, David A. Moore, Mary Falzon, James L. Reading, Iñigo Martincorena, Benjamin D. Simons, Peter J. Campbell, Sam M. Janes, *"Aberrant basal cell clonal dynamics shape early lung carcinogenesis"*, 2024, in preparation
 
 ## :envelope: Contact 
 
