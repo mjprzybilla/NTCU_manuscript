@@ -12,7 +12,7 @@ This GitHub repository contains the following folders:
 |   └─ figure4/: directory containing code to reproduce Figure 4
 |   └─ figure5/: directory containing code to reproduce Figure 5
 |   └─ figure6/: directory containing code to reproduce Figure 6
-|   └─ figure6/: directory containing code to reproduce Figure 7
+|   └─ figure7/: directory containing code to reproduce Figure 7
 └─ data/: directory containing code used for data analysis
 |   └─ scRNAseq/: directory containing data from scRNAseq profiling
 |   └─ WES/: directory containing data from WES
