@@ -1,0 +1,15 @@
+"","old_parent","old_child","Evidence","new_child","new_parent"
+"1","12","9","very weak",11,13
+"2","22","12","very weak",13,14
+"3","22","8","very weak",10,14
+"4","10","11","medium",1,15
+"5","PD","10","strong",15,12
+"6","PD","18","strong",6,12
+"7","PD","22","strong",14,12
+"8","PD","14","strong",3,12
+"9","PD","16","strong",4,12
+"10","PD","17","strong",5,12
+"11","PD","2","strong",8,12
+"12","PD","13","strong",2,12
+"13","PD","19","strong",7,12
+"14","PD","23","strong",9,12
