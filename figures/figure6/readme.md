@@ -6,7 +6,7 @@
 
 **Mapscape_Generation.Rmd** - R markdown script to create interactive mapscape visualisation based on input files provided in each folder (e.g. MD7047_Right_Lung). 
 
-**mapscape_generation.sh** - Bash script executed as given below in order to create the interactive mapscape visualisation based on input files provided in each folder (e.g. MD7047_Right_Lung). Notably, the *_ndp_assigned_muts_final.csv* file is not provided in the respective folder, but can be derived from the variant file on Dryad. 
+**mapscape_generation.sh** - Bash script executed as given below in order to create the interactive mapscape visualisation based on input files provided in each folder (e.g. MD7047_Right_Lung). 
 
 ```
 ./mapscape_generation.sh \
