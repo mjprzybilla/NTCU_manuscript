@@ -21,7 +21,7 @@ This GitHub repository contains the following folders:
 ```
 
 ## :unlock: Processed data
-Metadata and counts, as well as processed scanpy objects available on Zenodo. WGS variant calls are available on [Dyrad](https://datadryad.org/share/Jg-nOXEjISESBRODKNgIWWd6iRtWsbD9AmYkHOjh3pE).
+Metadata and counts, as well as processed scanpy objects available on Zenodo. WGS variant calls are available on (Dryad)[https://datadryad.org/share/Jg-nOXEjISESBRODKNgIWWd6iRtWsbD9AmYkHOjh3pE].
 
 ## :closed_lock_with_key: Raw sequencing data
 WGS and scRNA-seq data will be available via ENA (murine WGS: ERP128764; murine scRNA-seq: ERP136782), GEO (human scRNA-seq: GSE276610) and HTAN (human WES). 
