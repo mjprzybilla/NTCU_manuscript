@@ -21,10 +21,10 @@ This GitHub repository contains the following folders:
 ```
 
 ## :unlock: Processed data
-Metadata and counts, as well as processed scanpy objects available on Zenodo
+Metadata and counts, as well as processed scanpy objects available on Zenodo. WGS variant calls are available on [Dyrad](https://datadryad.org/share/Jg-nOXEjISESBRODKNgIWWd6iRtWsbD9AmYkHOjh3pE).
 
 ## :closed_lock_with_key: Raw sequencing data
-WGS and scRNA-seq data will be available via EGA.
+WGS and scRNA-seq data will be available via ENA (murine WGS: ERP128764; murine scRNA-seq: ERP136782), GEO (human scRNA-seq: GSE276610) and HTAN (human WES). 
 
 ## :white_check_mark: Citation
 Sandra Gómez-López, Ahmed S. N. Alhendi, Moritz J. Przybilla, Ignacio Bordeu, Zoe E. Whiteman, Timothy Butler, Maral J. Rouhani, Lukas Kalinke, Imran Uddin, Kate E. J. Otter, Deepak P. Chandrasekharan, Marta Lebrusant-Fernandez, Abigail Y. L. Shurr, Pascal F. Durrenberger, David A. Moore, Mary Falzon, James L. Reading, Iñigo Martincorena, Benjamin D. Simons, Peter J. Campbell, Sam M. Janes, *"Aberrant basal cell clonal dynamics shape early lung carcinogenesis"*, 2024, in preparation
