@@ -1,0 +1,128 @@
+---
+title: "Mapscape Generation"
+author: "Moritz Przybilla"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output: html_document
+---
+```{r libraries, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, error = TRUE)
+
+#### Load libraries
+library(mapscape)
+library(readxl)
+library(data.table)
+library(dplyr)
+library(stringr)
+library(ape)
+library(RColorBrewer)
+library(phylobase)
+library(knitr)
+library(kableExtra)
+
+### get new mapscape function
+source(paste0(gitdir, "/R/mapscape.R"))
+```
+
+#### Filter to remove samples withough any clone > 0.01 
+(if low_prev = TRUE, this step is skipped)
+```{r filtering}
+### If only high-prevalence clones being displayed, remove microbiopsies without any clones >0.01 (otherwise mapscape fails)
+if (low_prev == FALSE) {
+  print("removing low prevelence (<0.01) samples from display")
+
+  max_prev <- prev_tbl_filt %>%
+    dplyr::group_by(sample_id) %>%
+    dplyr::summarise(max_prev = max(clonal_prev))
+  high_prev_samples <- max_prev %>%
+    dplyr::filter(max_prev >= 0.01) %>%
+    dplyr::select(sample_id)
+  removed_samps <- max_prev %>%
+    dplyr::filter(max_prev < 0.01) %>%
+    dplyr::select(sample_id)
+  removed_samps <- removed_samps$sample_id
+  high_prev_samples <- high_prev_samples$sample_id
+  print(removed_samps)
+  prev_tbl_filt <- prev_tbl_filt %>%
+    dplyr::filter(sample_id %in% high_prev_samples)
+  location_tbl <- location_tbl %>%
+    dplyr::filter(sample_id %in% high_prev_samples)
+  
+  # filter mut table to only inclde samples/clones present
+  present_clones <- unique(prev_tbl_filt$clone_id)
+  if (exists("mut_tbl_final")) {
+      mut_tbl_final <- mut_tbl_final %>%
+    dplyr::filter(sample_id %in% high_prev_samples,
+                  clone_id %in% present_clones) 
+  }
+} else {
+  print("Low prevelence clones displayed, entire tree included")
+}
+```
+### Display cluster diagram
+```{r pdf}
+cluster_diagram_file <- paste0(ndp_dir, "/Cluster_and_spectrum_plots.pdf")
+```
+<object data=`r cluster_diagram_file` width="1200px" height="1200px">
+    <embed src=`r cluster_diagram_file`>
+    </embed>
+</object>
+
+### Display per-cluster mutation counts
+```{r}
+mut_counts %>%
+  kable %>%
+  kable_styling("striped", full_width = F) %>%
+  scroll_box(width = "300px", height = "500px")
+```
+
+### Display SigFit Results
+```{r}
+#SigFit_reconstruction_file <- paste0(SigFit.dir, substr(sample_name, 1,7), "_SigFit_reconstruction.pdf")
+
+#<object data=`r SigFit_reconstruction_file` width="1200px" height="1200px">
+#    <embed src=`r SigFit_reconstruction_file`>
+#    </embed>
+#</object>
+```
+
+
+#### Display Large Versions of Static Trees
+```{r, echo=FALSE, out.width="100%", fig.align = "center", fig.show='hold'}
+cluster_tree <- gsub("_SigFit_annotated.png", "_static_tree.png", static_tree_file)
+
+knitr::include_graphics(
+  c(static_tree_file, cluster_tree)
+)
+```
+
+### Generate mapscape 
+```{r mapscape}
+if (exists("mut.file")) {
+  print("mutation table found")
+  mapscape(clonal_prev = prev_tbl_filt, 
+         tree_edges = edge_tbl, 
+         sample_locations = location_tbl,
+         img_ref = image.file,
+         static_tree_image = static_tree_file,
+         width = 1500,
+         height = 1300,
+         show_low_prev_gtypes = low_prev,
+         phylogeny_title = sample_name,
+         anatomy_title = pat_age,
+         clone_colours = color_tbl,
+         mutations = mut_tbl_final)
+} else {
+  print("no mutation table found")
+  mapscape(clonal_prev = prev_tbl_filt, 
+           tree_edges = edge_tbl, 
+           sample_locations = location_tbl,
+           img_ref = image.file,
+           static_tree_image = static_tree_file,
+           width = 1500,
+           height = 1300,
+           show_low_prev_gtypes = low_prev,
+           phylogeny_title = sample_name,
+           clone_colours = color_tbl)
+}
+```
+
