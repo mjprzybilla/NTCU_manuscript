@@ -1,0 +1,10 @@
+"","old_parent","old_child","Evidence","new_child","new_parent"
+"1","3","4","very weak",7,9
+"2","19","3","very weak",9,10
+"3","3","15","very weak",4,9
+"4","PD","19","strong",10,8
+"5","PD","12","strong",3,8
+"6","PD","18","strong",5,8
+"7","PD","1","strong",1,8
+"8","PD","2","strong",6,8
+"9","PD","11","strong",2,8
