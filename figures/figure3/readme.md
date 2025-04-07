@@ -1,6 +1,6 @@
 # Figure 3 -  Single cell profiling reveals an epithelial cell fate shift following NTCU treatment.
 
-**scRNA_01_scanpy_NTCU_GEX_analysis.ipynb** - Script to perform standard analysis workflow of single-cell RNA-sequencing data from the trachea.
+**Mouse_scRNAseq_01_scanpy_NTCU_GEX_analysis.ipynb** - Script to perform standard analysis workflow of single-cell RNA-sequencing data from the trachea.
 
 **Mouse_scRNAseq_02_Epithelial_subclustering.R** - Script to perform subclustering of epithelial cells identified from the trachea scRNA-Seq dataset.
 
